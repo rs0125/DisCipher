@@ -1,6 +1,7 @@
 # DisCipher
 
-This Discord bot project is built using Discord.py, a Python library for creating Discord bots. The bot is designed to provide Morse code encoding and decoding functionalities within Discord servers.
+This is a discord bot designed to provide Morse code encoding and decoding functionalities within Discord servers.
+This project uses discord py, a library that exhaustively implements Discord's APIs in an efficient and Pythonic way.
 
 # Features
 
