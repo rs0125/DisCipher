@@ -16,3 +16,25 @@ def decode(S):
         temp = DecodeDict[i]
         eng = eng + temp
     return eng
+
+
+def encode(S):
+    # Dictionary from english to morse
+    encodeDict = {'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....',
+                  'L': '.-..', 'M': '--', 'N': '-.', 'O': '---', 'P': '.--.', 'Q': '--.-', 'R': '.-.', 'S': '...',
+                  'T': '-',
+                  'U': '..-', 'V': '...-', 'W': '.--', 'X': '-..-', 'Y': '-.--', 'Z': '--..', '1': '.----',
+                  '2': '..---', '3': '...--',
+                  '4': '....-', '5': '.....', '6': '-....', '7': '--...', '8': '---..', '9': '----.', '0': '-----',
+                  ' ': '/'}
+
+    morse = ''
+
+    # traversing and substituting via a loop
+    S = S.upper()
+    S = S.split()
+    for i in S:
+        for j in i:
+            temp = encodeDict[j]
+            morse = morse + temp + ' '
+    return morse
