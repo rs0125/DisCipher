@@ -21,12 +21,12 @@ async def encoding(interaction: discord.Interaction, input: str) -> None:
 async def decoding(interaction: discord.Interaction, input: str) -> None:
     await interaction.response.send_message(morsecode.decode(input))
 
-@tree.command(name = "caesar-encode", description = "encodes from english to morse", guild=discord.Object(id=1109016227210350634))
+@tree.command(name = "caesar-encode", description = "encodes from english to caesarean cipher", guild=discord.Object(id=1109016227210350634))
 async def encoding(interaction: discord.Interaction, shifting: int, *, input: str) -> None:
     await interaction.response.send_message(caesarcode.encode(shifting, input))
 
-@tree.command(name = "caesar-encode", description = "encodes from english to morse", guild=discord.Object(id=1109016227210350634))
+@tree.command(name = "caesar-decode", description = "decodes from caesarean to english", guild=discord.Object(id=1109016227210350634))
 async def encoding(interaction: discord.Interaction, shifting: int, *, input: str) -> None:
-    await interaction.response.send_message(caesarcode.encode(shifting, input))
+    await interaction.response.send_message(caesarcode.decode(shifting, input))
 
 client.run(token)
