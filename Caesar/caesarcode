@@ -1,0 +1,27 @@
+def encode(n, string):
+    letters = ['A', 'B', 'C', 'D', 'E' , 'F' , 'G' ,'H' ,'I' ,'J' ,'K' ,'L' ,'M' ,'N' ,'O' ,'P' ,'Q' ,'R' ,'S' ,'T' ,'U' ,'V' ,'W' ,'X' ,'Y' ,'Z']
+    temp = ''
+    string = string.upper()
+    for i in string:
+        if i.isalpha():
+            shift = (letters.index(i)+ n)
+            if shift >= 26:
+                shift = 26 - shift
+            temp = temp + letters[shift]
+        else :
+            temp = temp + i
+    return temp
+
+def decode(n, string):
+    letters = ['A', 'B', 'C', 'D', 'E' , 'F' , 'G' ,'H' ,'I' ,'J' ,'K' ,'L' ,'M' ,'N' ,'O' ,'P' ,'Q' ,'R' ,'S' ,'T' ,'U' ,'V' ,'W' ,'X' ,'Y' ,'Z']
+    temp = ''
+    string = string.upper()
+    for i in string:
+        if i.isalpha():
+            shift = (letters.index(i)+ n)
+            if shift >= 26:
+                shift = 26 - shift
+            temp = temp + letters[shift]
+        else :
+            temp = temp + i
+    return temp
