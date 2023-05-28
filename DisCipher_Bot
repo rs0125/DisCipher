@@ -1,36 +1,32 @@
 import discord
-from discord.ui import Button, View
 from discord import app_commands
-from morsecode import encode, decode
-from discord import ui
+import morsecode
+import caesarcode
 
-token = 'xxxxxxxxxxxxxxxxxxxxxxxxxx'
+token = 'xxxxxxxxxxxxxx'
 intents = discord.Intents.default()
 client = discord.Client(intents=intents)
 tree = app_commands.CommandTree(client)
-
-ENC = Button(label="Encode (E -> M)", style=discord.ButtonStyle.blurple)
-DEC = Button(label="Decode (M -> E)", style=discord.ButtonStyle.blurple)
 
 @client.event
 async def on_ready():
     await tree.sync(guild=discord.Object(id=1109016227210350634))
     print("DisCipher up")
 
-@tree.command(name = "morse", description = "displays available subjects", guild=discord.Object(id=1109016227210350634))
-async def first_command(interaction,):
-    view = View()
-    view.add_item(ENC)
-    view.add_item(DEC)
-    await interaction.response.send_message('Would you like to Decode from morse to english, or encode from english to morse?', view=view)
+@tree.command(name = "morse-encode", description = "encodes from english to morse", guild=discord.Object(id=1109016227210350634))
+async def encoding(interaction: discord.Interaction, input: str) -> None:
+    await interaction.response.send_message(morsecode.encode(input))
 
-    async def encodercallback(interaction):
+@tree.command(name = "morse-decode", description = "decodes from morse  to english", guild=discord.Object(id=1109016227210350634))
+async def decoding(interaction: discord.Interaction, input: str) -> None:
+    await interaction.response.send_message(morsecode.decode(input))
 
-            answer = ui.TextInput(label='Answer', style=discord.TextStyle.paragraph)
-            await interaction.response.send_message(encode(answer))
+@tree.command(name = "caesar-encode", description = "encodes from english to morse", guild=discord.Object(id=1109016227210350634))
+async def encoding(interaction: discord.Interaction, shifting: int, *, input: str) -> None:
+    await interaction.response.send_message(caesarcode.encode(shifting, input))
 
-    ENC.callback = encodercallback
-
-
+@tree.command(name = "caesar-encode", description = "encodes from english to morse", guild=discord.Object(id=1109016227210350634))
+async def encoding(interaction: discord.Interaction, shifting: int, *, input: str) -> None:
+    await interaction.response.send_message(caesarcode.encode(shifting, input))
 
 client.run(token)
