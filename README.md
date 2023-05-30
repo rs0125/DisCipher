@@ -15,8 +15,8 @@ Caesarean Cipher Decoding: The bot can decode caesar code messages back into pla
 
 Interactive Commands: The bot offers interactive commands to make Morse code encoding and decoding easy and user-friendly. Users can trigger commands with specified prefixes to interact with the bot and utilize its functionalities.
 ### Featured Ciphers :
-- Morse
-- Caesarean Substitution
+- [Morse](https://en.wikipedia.org/wiki/Morse_code)
+- [Caesarean Substitution](https://en.wikipedia.org/wiki/Caesar_cipher)
 - Beaumont (in progress)
 - Enigma (Planned)
 
