@@ -1,20 +1,12 @@
-// archive added for reference reasons
-// below is an old C code with cs50 functions
-// it has been added for reference for ASCII substitution 
-// and case sensitivity (to be added later in the final python version)
-
-#include <ctype.h>
-#include <cs50.h>
-#include <stdio.h>
-#include <stdlib.h>
+#include <ctype.h> // archive added for reference reasons
+#include <cs50.h> // below is an old C code with cs50 functions
+#include <stdio.h> // it has been added for reference for ASCII substitution 
+#include <stdlib.h> // and case sensitivity (to be added later in the final python version)
 #include <string.h>
-
 void cipher(string word, int n);
 bool only_digits(string s);
-
 string alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 string alphalow = "abcdefghijklmnopqrstuvwxyz";
-
 int main(int argc, string argv[])
 {
     if (argc != 2 || only_digits(argv[1]) == false)
@@ -22,19 +14,15 @@ int main(int argc, string argv[])
         printf("Usage: ./caesar key\n");
         return 1;
     }
-
     string word = get_string("plaintext: ");
     cipher(word, atoi(argv[1]));
-
 }
-
 void cipher(string word, int n)
 {
     while (n > 26)
     {
         n = n - 26;
     }
-
     char word1[strlen(word)];
     for (int i = 0; word[i] != '\0'; i++)
     {
@@ -64,12 +52,9 @@ void cipher(string word, int n)
         {
             word1[i] = word[i];
         }
-
-
     }
     printf("ciphertext: %s\n", word1);
 }
-
 bool only_digits(string s)
 {
     for (int i = 0; i < strlen(s); i++)
