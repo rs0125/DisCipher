@@ -1,9 +1,12 @@
 import codecs
 
-
+#encodes caesar sub
 def encode(n, string):
+     # defining an alphabet list
     letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
                'V', 'W', 'X', 'Y', 'Z']
+    
+    #defining a temporary string
     temp = ''
     string = string.upper()
     if n == 13:
@@ -18,10 +21,12 @@ def encode(n, string):
             temp = temp + i
     return temp
 
-
+#decodes caesar sub
 def decode(n, string):
+    # defining an alphabet list
     letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
                'V', 'W', 'X', 'Y', 'Z']
+    #defining a temporary string
     temp = ''
     string = string.upper()
     while n > 13:
