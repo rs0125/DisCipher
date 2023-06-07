@@ -18,8 +18,11 @@ Interactive Commands: The bot offers interactive commands to make Morse code enc
 - [Morse](https://en.wikipedia.org/wiki/Morse_code)
 - [Caesarean Substitution](https://en.wikipedia.org/wiki/Caesar_cipher)
 - [ROT13](https://en.wikipedia.org/wiki/ROT13)
-- Beaumont (in progress)
-- Enigma (Planned)
+
+Planned implementation : 
+- Case sensitivity in Caesarean substitution
+- Transpositional algorithms
+- Enigma cipher (naval and Wehrmacht variations)
 
 ## Contributing
 
