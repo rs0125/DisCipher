@@ -29,6 +29,7 @@ Planned implementation :
 
 I'm planning to implement all sorts of historical ciphers into the bot.
 Contributions to this project are welcome! If you have any suggestions, bug fixes, or new features, feel free to open an issue or submit a pull request on the GitHub repository.
+Any usage in personal cryptography/discord bot projects is also welcome with due credits.
 
 
  ## License
