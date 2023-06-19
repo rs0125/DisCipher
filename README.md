@@ -31,4 +31,4 @@ Any usage in personal cryptography/discord bot projects is also welcome with due
 
  ## License
  
-This project is licensed under the Creative Commons License. Feel free to modify and distribute the code as per the license terms.
+This project is licensed under the Creative Commons License. Feel free to modify and distribute the code as per the license terms with due credit and citation.
