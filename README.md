@@ -20,6 +20,7 @@ Planned implementation :
 - Case sensitivity in Caesarean substitution
 - Transpositional algorithms
 - Enigma cipher (naval and Wehrmacht variations)
+- Auto Caesarean Decipher 
 - Possibly : further modal flexibility
 
 ## Contributing
