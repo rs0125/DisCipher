@@ -21,7 +21,6 @@ Planned implementation :
 - Transpositional algorithms
 - Enigma cipher (naval and Wehrmacht variations)
 - Auto Caesarean Decipher 
-- Possibly : further modal flexibility
 
 ## Contributing
 
