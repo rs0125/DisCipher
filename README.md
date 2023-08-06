@@ -18,7 +18,7 @@ Interactive Commands: The bot offers interactive commands to make Morse code enc
 
 Planned implementation : 
 - Case sensitivity in Caesarean substitution
-- Transpositional algorithms
+- Transpositional algorithms (plus SHA)
 - Enigma cipher (naval and Wehrmacht variations)
 - Auto Caesarean Decipher 
 
