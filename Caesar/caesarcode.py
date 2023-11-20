@@ -43,6 +43,7 @@ def decode(n, string):
             temp = temp + i
     return temp
 
+#TODO : import case sensitive code from moodle programs, put decode function as a child to encode function
 
 def rot3encode(s):
     return (codecs.encode(s, 'rot13')).upper()
